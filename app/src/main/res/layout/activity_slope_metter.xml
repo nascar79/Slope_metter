@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000"
+    android:gravity="right">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Orientation"
+        android:textColor="#fff4ff00"
+        android:textSize="@dimen/text28"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:id="@+id/textView4"
+                    android:textSize="@dimen/text28"
+                    android:textColor="#fff4ff00" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="X Value"
+                    android:id="@+id/xboxo"
+                    android:textColor="#ff3bff18"
+                    android:textSize="@dimen/text28"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y"
+                    android:id="@+id/textView5"
+                    android:textSize="@dimen/text28"
+                    android:textColor="#fff4ff00" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Y Value"
+                    android:id="@+id/yboxo"
+                    android:textColor="#ff3bff18"
+                    android:textSize="@dimen/text28"
+                    android:clickable="true"
+                    android:onClick="resetY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z"
+                    android:id="@+id/textView6"
+                    android:textSize="@dimen/text28"
+                    android:textColor="#fff4ff00" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Z Value"
+                    android:id="@+id/zboxo"
+                    android:textColor="#ff3bff18"
+                    android:textSize="@dimen/text28"
+                    android:clickable="true"
+                    android:onClick="resetZ" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:id="@+id/button"
+                android:layout_gravity="center_vertical|right"
+                android:clickable="true"
+                android:onClick="onReset" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer"
+        android:textColor="#fff4ff00"
+        android:textSize="@dimen/text24"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/textView"
+            android:textSize="@dimen/text24"
+            android:textColor="#fff4ff00" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="X Value"
+            android:id="@+id/xbox"
+            android:textColor="#ff3bff18"
+            android:textSize="@dimen/text24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y "
+            android:id="@+id/textView2"
+            android:textSize="@dimen/text24"
+            android:textColor="#fff4ff00" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Y Value"
+            android:id="@+id/ybox"
+            android:textColor="#ff3bff18"
+            android:textSize="@dimen/text24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z "
+            android:id="@+id/textView3"
+            android:textSize="@dimen/text24"
+            android:textColor="#fff4ff00" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Z Value"
+            android:id="@+id/zbox"
+            android:textColor="#ff3bff18"
+            android:textSize="@dimen/text24" />
+    </LinearLayout>
+
+</LinearLayout>
